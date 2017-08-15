@@ -2,7 +2,7 @@ machine:
   hosts:
     cygnus.dev: 127.0.0.1
   php:
-    version: 7.0.10
+    version: 7.0.11
   services:
     - mysql
   post:
