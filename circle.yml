@@ -11,6 +11,8 @@ machine:
 dependencies:
   pre:
     - sudo composer self-update
+  override:
+    - composer install --no-interaction
   post:
     - sudo ln -s /opt/circleci/.phpenv/shims/php /usr/local/bin/php
     - sudo cp /opt/circleci/.phpenv/shims/php /usr/bin/php
